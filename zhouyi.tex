@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\pagestyle{fancy}  
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-17pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+  % Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1:}\\{ #2}
+    }
+  }
+  \newcommand{\projectitem}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1}\, #2 & \small#3
+    \end{tabular*}
+  }
+  
+  \newcommand{\tableStart}{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  }
+  \newcommand{\tableEnd}{
+    \end{tabular*}\\
+  }
+  \newcommand{\indentStart}[1][{}]{
+    \begin{itemize}[label=#1,leftmargin=*]\vspace{-5pt} \item
+  }
+  \newcommand{\indentEnd}{
+    \end{itemize}\vspace{-3pt}
+  }
+  
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-5pt}
+      }
+      
+      \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+        
+        \renewcommand{\labelitemii}{$\circ$}
+        
+        \newcommand{\resumeListStart}{\begin{itemize}[label={},leftmargin=*]}
+        \newcommand{\resumeListEnd}{\end{itemize}}
+        \newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+        
+        %-------------------------------------------
+          %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          
+          
+        \begin{document}
+        
+        %----------HEADING-----------------
+        \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{{\Large Yi ZHOU}} & \href{mailto:zhouyi@cmu.edu}{zhouyi@cmu.edu}\\
+         %Seeking a 2019 Summer Internship Opportunity in Software Engineering 
+         & (412) 773-3378\\
+        \end{tabular*}
+        \vspace{-3pt}
+        
+        %-----------EDUCATION-----------------
+        \section{Education}
+        \tableStart
+        \textbf{\large Carnegie Mellon University (CMU) - School of Computer Science} & Pittsburgh, PA\\
+        Master of Science in Artificial Intelligence and Innovation & May 2020 \\
+        \tableEnd
+        \textbf{Courses:} Introduction to Computer Systems, Natural Language Processing (in progress), Machine Learning (in progress)\\
+        \vspace{3pt}
+        \tableStart
+        \textbf{\large The Hong Kong Polytechnic University (PolyU)} & Hong Kong\\
+        Bachelor of Science in Computing, Minor - Applied Mathematics (GPA: 3.85/4.00) & Jun. 2018 \\
+        \tableEnd
+        % $\bullet$\textbf{ Coursework:} 
+        %   Artificial Intelligence, 
+        %   Database Systems, 
+        %   Probability \& Engineering Statistics, 
+        %   Operating Systems and System Programming,
+        %   Web Development, 
+        %   Software Engineering, 
+        % 	Calculus for Engineers
+        %   \\
+        % $\bullet$\textbf{ Core Courses:} 
+        %   Data Mining \& Data Warehousing, 
+        %   Big Data Analytics, 
+        %   Statistical Inference, 
+        %   Forecasting \& Applied Time Series Analysis, 
+        %   Principles \& Practice of Internet Security\\
+        %------------------------
+        \textbf{Courses:} Web Application Development, Database Systems, Data Structures, Software Engineering, OOP
+        %-----------EXPERIENCE-----------------
+        \vspace{4pt}
+        \section{Experience}
+        \tableStart
+        \textbf{\large XtalPi Inc.} & Beijing, China\\
+        Algorithm Engineer Intern & Jun. 2018 -- Aug. 2018\\
+        \tableEnd
+        \indentStart
+        $\bullet$ Improved a molecule vectorization algorithm to be three times faster with Python by balancing multiprocessing load and reducing unnecessary computation and visualized the vectorization results using Python with Plotly.
+        \indentEnd
+        \tableStart
+        \textbf{\large PolyU, Internet Infrastructure and Security Research Laboratory} & Hong Kong\\
+        Research Assistant & Jun. 2017 -- Aug. 2017\\
+        \tableEnd
+        \indentStart
+        $\bullet$ Developed an anomaly detector that raises alerts based on round-trip time and packet loss rate with Python.\\
+        $\bullet$ Used Python with Matplotlib and Pandas to preprocess and analyze the measurement results across the campus.\\
+        $\bullet$ Determined the major factors that correlate with the performance of the wireless network.
+        \indentEnd
+        \tableStart
+        \textbf{\large Massachusetts Institute of Technology, Geospatial Data Center} & Boston, MA\\
+        Student Assistant & July 2016 -- Aug. 2016\\
+        \tableEnd
+        \indentStart
+        $\bullet$ Designed and implemented LearningBoard, an e-learning website with HTML, CSS, and JavaScript from scratch with features of course posting, file uploading, online quiz, code snippets, and authentication.\\
+        $\bullet$ Integrated VideoJS and Google Analytics to collect user behavior of viewing videos.
+        \indentEnd
+        
+        %-----------SELECTED PROJECTS-----------------
+        \section{Selected Projects}
+        \tableStart
+        \textbf{\large Introduction to Computer Systems (15513)}, Individual Course Assignments, CMU & Jun. 2018 -- Aug. 2018\\
+        \tableEnd
+        \indentStart
+        $\bullet$ Implemented \texttt{malloc}, \texttt{free}, and \texttt{realloc} with C by using segregated lists and clustering tiny memory blocks and ranked $4^{th}$ in memory utilization and $10^{th}$ in throughput in the class of 230.\\
+        $\bullet$ Implemented a concurrent caching Web proxy by multi-threading with semaphores in C and tested on real web pages.\\
+        $\bullet$ Wrote a cache simulator and optimized a matrix transpose kernel to minimize the number of misses on a simulated cache.
+        \indentEnd
+        \tableStart
+        \textbf{\large Data Analysis on Campus Wi-Fi}, Final Year Project, PolyU & Sep. 2017 -- May. 2018
+        \tableEnd
+        \indentStart
+        $\bullet$ Clustered Wi-Fi latency by drawing Q-Q plots and conducting kernel density estimation in Python (Jupyter).\\
+        $\bullet$ Trained a logistic regression model with cross validation to predict high latency with 69\% precision and 70\% recall.\\% precision and 70\% recall in predicting high network latency by training a logistic regression model with sklearn.\\
+        $\bullet$ Retrieved data from Cassandra using Spark with Scala and from MongoDB with Python.\\
+        $\bullet$ Presented and explained analysis results to the staff of Information Technology Services Office (ITS) at PolyU.
+        
+        \indentEnd
+        \tableStart
+        \textbf{\large Image Classification}, Course Group Project, PolyU & Oct. 2016 -- Dec. 2016
+        \tableEnd
+        \indentStart
+        $\bullet$ Designed an SVM majority vote algorithm to differentiate brainwaves of people viewing faces and landscapes.\\
+        $\bullet$ Implemented the algorithm using Matlab and achieved the highest differentiation rate in the class.\\
+        \indentEnd
+        \vspace{2pt}
+        % \tableStart
+        % \textbf{\large Traffic Simulation}, Simulation \& Modeling, Individual Project & NTU, Mar. 2017 -- Apr. 2017
+        % \tableEnd
+        % \indentStart
+        % $\bullet$ Developed a simulation system for evaluating the traffic on a highway. \\
+        % $\bullet$ Used MLE to estimate the parameters of distributions and goodness-of-fit test to validate the estimations. 
+        % \indentEnd
+        \tableStart
+        \textbf{\large Development of a Campus-wise Social App}, Independent Project & May 2015 -- Jun. 2016
+        \tableEnd
+        \indentStart
+        $\bullet$ Led a team of three to develop a campus social app with features of meetup posting and instant messaging. \\
+        $\bullet$ Developed the frontend using JavaScript with AngularJS and the backend using Python with Django. \\
+        $\bullet$ Attracted more than 150 users via campus-wide promotion.
+        \indentEnd
+        
+        % \tableStart 
+        % \textbf{\large Monopoly Game}, Problem Solving Methodology in IT, Individual Project & PolyU, Oct. 2014 -- Dec. 2014
+        % \tableEnd
+        % \indentStart
+        % $\bullet$ Developed a monopoly game using Python. \\
+        % $\bullet$ he game is available at https://github.com/Yi-Zhou/monopoly.\\
+        % \indentEnd
+        \vspace{-2pt}
+        % \section{Hons \& Awards}
+        % \resumeListStart
+        % \honsitem{CMA Donors \& Scholarship}{PolyU, 2016-2017}
+        % \honsitem{Wong Tit-shing Student Exchange Scholarship}{PolyU, 2016-2017}
+        % \honsitem{Dean's List of Outstanding Students, Faculty of Engineering}{PolyU, 2015-2016}
+        % \honsitem{Freshman Project Competitions, 2nd Runner-up}{PolyU, 2014-2015}
+        % \resumeListEnd
+        
+        
+        %--------PROGRAMMING SKILLS------------
+        \section{Skills}
+        \textbf{Programming Languages:} {\space Python (proficient), Java, C, Scala, SQL, Javascript, PHP, C++, Matlab}\\
+        \textbf{Technologies:} {\space Pandas, sklearn, Matplotlib, Linux, Django, Docker, AngularJS, HTML5, CSS, Spark, MongoDB, Git}\\
+        %\textbf{Human Languages:} Proficient in English; Native in Mandarin; Fluent in Cantonese; 
+        % \textbf{Interests:} & {\space Natural languages (dialects, pidgins and Creoles), Xiangqi (Chinese chess), traveling}
+              
+      %--------LANGUAGE PROFICIENCY------------
+      % \section{Language Proficiency}
+      % \resumeListStart
+      % \item Proficient in English (TOEFL: 107; GRE: 326); Native in Mandarin; Fluent in Cantonese; 
+      % \resumeListEnd
+      %-------------------------------------------
+      \end{document}
