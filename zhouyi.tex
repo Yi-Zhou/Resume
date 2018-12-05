@@ -88,7 +88,7 @@
         
         %----------HEADING-----------------
         \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{{\Large Yi ZHOU}} & \href{mailto:zhouyi@cmu.edu}{zhouyi@cmu.edu}\\
+        \textbf{{\Large Yi ZHOU}} & \href{mailto:yizhou3@andrew.cmu.edu}{yizhou3@andrew.cmu.edu}\\
          %Seeking a 2019 Summer Internship Opportunity in Software Engineering 
          & (412) 773-3378\\
         \end{tabular*}
@@ -98,10 +98,10 @@
         \section{Education}
         \tableStart
         \textbf{\large Carnegie Mellon University (CMU) - School of Computer Science} & Pittsburgh, PA\\
-        Master of Science in Artificial Intelligence and Innovation & May 2020 \\
+        Master of Science in Artificial Intelligence and Innovation (Mid-Semester GPA: 4.22/4.30) & May 2020 \\
         \tableEnd
-        \textbf{Courses:} Introduction to Computer Systems, Natural Language Processing (in progress), Machine Learning (in progress)\\
-        \vspace{3pt}
+        \textbf{Courses:} Machine Learning (in progress), Natural Language Processing (in progress), Computer Systems\\
+        \vspace{5pt}
         \tableStart
         \textbf{\large The Hong Kong Polytechnic University (PolyU)} & Hong Kong\\
         Bachelor of Science in Computing, Minor - Applied Mathematics (GPA: 3.85/4.00) & Jun. 2018 \\
@@ -122,61 +122,78 @@
         %   Forecasting \& Applied Time Series Analysis, 
         %   Principles \& Practice of Internet Security\\
         %------------------------
-        \textbf{Courses:} Web Application Development, Database Systems, Data Structures, Software Engineering, OOP
+        \textbf{Courses:} Machine Learning, Database Systems, Data Structures, Software Engineering, OOP
         %-----------EXPERIENCE-----------------
         \vspace{4pt}
-        \section{Experience}
+        \section{Work Experience}
         \tableStart
         \textbf{\large XtalPi Inc.} & Beijing, China\\
-        Algorithm Engineer Intern & Jun. 2018 -- Aug. 2018\\
+        Algorithm Engineer Intern & May. 2018 -- Aug. 2018\\
         \tableEnd
         \indentStart
-        $\bullet$ Improved a molecule vectorization algorithm to be three times faster with Python by balancing multiprocessing load and reducing unnecessary computation and visualized the vectorization results using Python with Plotly.
+        $\bullet$ Improved a molecule vectorization algorithm to be three times faster in Numpy by balancing multiprocessing load with MPI4py and reducing unnecessary computation and visualized the vectorization results using Python with Plotly.
         \indentEnd
         \tableStart
         \textbf{\large PolyU, Internet Infrastructure and Security Research Laboratory} & Hong Kong\\
         Research Assistant & Jun. 2017 -- Aug. 2017\\
         \tableEnd
         \indentStart
+        $\bullet$ Collected wireless data using MQTT protocol with Raspberry Pi's deployed across the campus.\\
         $\bullet$ Developed an anomaly detector that raises alerts based on round-trip time and packet loss rate with Python.\\
         $\bullet$ Used Python with Matplotlib and Pandas to preprocess and analyze the measurement results across the campus.\\
         $\bullet$ Determined the major factors that correlate with the performance of the wireless network.
         \indentEnd
-        \tableStart
-        \textbf{\large Massachusetts Institute of Technology, Geospatial Data Center} & Boston, MA\\
-        Student Assistant & July 2016 -- Aug. 2016\\
-        \tableEnd
-        \indentStart
-        $\bullet$ Designed and implemented LearningBoard, an e-learning website with HTML, CSS, and JavaScript from scratch with features of course posting, file uploading, online quiz, code snippets, and authentication.\\
-        $\bullet$ Integrated VideoJS and Google Analytics to collect user behavior of viewing videos.
-        \indentEnd
+        % \tableStart
+        
+        % \textbf{\large Massachusetts Institute of Technology, Geospatial Data Center} & Boston, MA\\
+        % Student Assistant & July 2016 -- Aug. 2016\\
+        % \tableEnd
+        % \indentStart
+        % $\bullet$ Designed and implemented LearningBoard, an e-learning website with HTML, CSS, and JavaScript from scratch with features of course posting, file uploading, online quiz, code snippets, and authentication.\\
+        % $\bullet$ Integrated VideoJS and Google Analytics to collect user behavior of viewing videos.
+        % \indentEnd
         
         %-----------SELECTED PROJECTS-----------------
         \section{Selected Projects}
         \tableStart
-        \textbf{\large Introduction to Computer Systems (15513)}, Individual Course Assignments, CMU & Jun. 2018 -- Aug. 2018\\
+        \textbf{\large Question Generation and Answering System}, Course Group Project, CMU & Sep. 2018 -- Dec. 2018
         \tableEnd
         \indentStart
-        $\bullet$ Implemented \texttt{malloc}, \texttt{free}, and \texttt{realloc} with C by using segregated lists and clustering tiny memory blocks and ranked $4^{th}$ in memory utilization and $10^{th}$ in throughput in the class of 230.\\
+          $\bullet$ Designed and implemented a system to ask and answer intelligent questions based on Wikipedia articles.\\
+        $\bullet$ Used Stanford Parser and Named Entity Recognizer, NLTK Tokenizer, and WordNet Lemmatizer to retrieve information, analyze syntactic structure and semantics, and manipulate English text.\\
+        \indentEnd
+        \tableStart
+        \textbf{\large Implementation of Machine Learning Algorithms}, Course Assignments, CMU & Sep. 2018 -- Dec. 2018
+        \tableEnd
+        \indentStart
+          $\bullet$ Implemented and conducted experiments on multiple machine learning models including Decision Trees, Logistic Regression, Neural Networks, Hidden Markov Models, Reinforcement Learning (Q-Learning), and K-Means with Numpy.
+        \indentEnd
+        
+        \tableStart
+        \textbf{\large System Programming (C, Linux)}, Course Assignments, CMU & Jun. 2018 -- Aug. 2018\\
+        \tableEnd
+        \indentStart
+        $\bullet$ Implemented \texttt{malloc}, \texttt{free}, and \texttt{realloc} in C by using segregated lists and clustering tiny memory blocks and ranked $4^{th}$ in memory utilization and $10^{th}$ in throughput in the class of 230.\\
         $\bullet$ Implemented a concurrent caching Web proxy by multi-threading with semaphores in C and tested on real web pages.\\
         $\bullet$ Wrote a cache simulator and optimized a matrix transpose kernel to minimize the number of misses on a simulated cache.
         \indentEnd
+
         \tableStart
-        \textbf{\large Data Analysis on Campus Wi-Fi}, Final Year Project, PolyU & Sep. 2017 -- May. 2018
+        \textbf{\large Data Analysis on Campus Wi-Fi}, Final Year Project, PolyU & Sep. 2017 -- May. 2018\\
         \tableEnd
         \indentStart
         $\bullet$ Clustered Wi-Fi latency by drawing Q-Q plots and conducting kernel density estimation in Python (Jupyter).\\
-        $\bullet$ Trained a logistic regression model with cross validation to predict high latency with 69\% precision and 70\% recall.\\% precision and 70\% recall in predicting high network latency by training a logistic regression model with sklearn.\\
+        $\bullet$ Trained a logistic regression model with cross-validation to predict high latency with 69\% precision and 70\% recall.\\% precision and 70\% recall in predicting high network latency by training a logistic regression model with sklearn.\\
         $\bullet$ Retrieved data from Cassandra using Spark with Scala and from MongoDB with Python.\\
         $\bullet$ Presented and explained analysis results to the staff of Information Technology Services Office (ITS) at PolyU.
         
         \indentEnd
         \tableStart
-        \textbf{\large Image Classification}, Course Group Project, PolyU & Oct. 2016 -- Dec. 2016
+        \textbf{\large Image Classification using Brainwave Data}, Course Group Project, PolyU & Oct. 2016 -- Dec. 2016\\
         \tableEnd
         \indentStart
         $\bullet$ Designed an SVM majority vote algorithm to differentiate brainwaves of people viewing faces and landscapes.\\
-        $\bullet$ Implemented the algorithm using Matlab and achieved the highest differentiation rate in the class.\\
+        $\bullet$ Implemented the algorithm using Matlab and achieved 1st place in differentiation rate in the class.\\
         \indentEnd
         \vspace{2pt}
         % \tableStart
@@ -186,14 +203,15 @@
         % $\bullet$ Developed a simulation system for evaluating the traffic on a highway. \\
         % $\bullet$ Used MLE to estimate the parameters of distributions and goodness-of-fit test to validate the estimations. 
         % \indentEnd
-        \tableStart
-        \textbf{\large Development of a Campus-wise Social App}, Independent Project & May 2015 -- Jun. 2016
-        \tableEnd
-        \indentStart
-        $\bullet$ Led a team of three to develop a campus social app with features of meetup posting and instant messaging. \\
-        $\bullet$ Developed the frontend using JavaScript with AngularJS and the backend using Python with Django. \\
-        $\bullet$ Attracted more than 150 users via campus-wide promotion.
-        \indentEnd
+        
+        % \tableStart
+        % \textbf{\large Development of a Campus-wise Social App}, Independent Project & May 2015 -- Jun. 2016
+        % \tableEnd
+        % \indentStart
+        % $\bullet$ Led a team of three to develop a campus social app with features of meetup posting and instant messaging. \\
+        % $\bullet$ Developed the frontend using JavaScript with AngularJS and the backend using Python with Django. \\
+        % $\bullet$ Attracted more than 150 users via campus-wide promotion.
+        % \indentEnd
         
         % \tableStart 
         % \textbf{\large Monopoly Game}, Problem Solving Methodology in IT, Individual Project & PolyU, Oct. 2014 -- Dec. 2014
@@ -214,8 +232,8 @@
         
         %--------PROGRAMMING SKILLS------------
         \section{Skills}
-        \textbf{Programming Languages:} {\space Python (proficient), Java, C, Scala, SQL, Javascript, PHP, C++, Matlab}\\
-        \textbf{Technologies:} {\space Pandas, sklearn, Matplotlib, Linux, Django, Docker, AngularJS, HTML5, CSS, Spark, MongoDB, Git}\\
+        \textbf{Programming Languages:} {\space Python (proficient), Java, C, Scala, Bash, SQL, Javascript, PHP, C++, Matlab}\\
+        \textbf{Technologies:} {\space Numpy, sklearn, Pandas, Matplotlib, MongoDB, MySQL, Linux, Git, Spark, Docker}\\
         %\textbf{Human Languages:} Proficient in English; Native in Mandarin; Fluent in Cantonese; 
         % \textbf{Interests:} & {\space Natural languages (dialects, pidgins and Creoles), Xiangqi (Chinese chess), traveling}
               
